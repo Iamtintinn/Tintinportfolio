@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: Road Monitoring, a PHP and MySQL application for a local government unit by Kristine Geranta.">
+  <meta name="theme-color" content="#ffffff">
+  <title>LGU Road &amp; Transportation Monitoring — Kristine Geranta</title>
+  <script>if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js");try{if(localStorage.getItem("theme-choice")==="night"){document.documentElement.removeAttribute("data-theme");var themeMeta=document.querySelector('meta[name="theme-color"]');if(themeMeta)themeMeta.setAttribute("content","#111214");}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css?v=33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111214'/%3E%3Crect x='7' y='7' width='18' height='18' rx='2' fill='none' stroke='%23A34D5E' stroke-width='1.5'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-bar">
+      <a class="wordmark" href="../../index.html" aria-label="Kristine Geranta, home">
+        <span class="logo-mark" aria-hidden="true">KG</span>
+      </a>
+      <nav class="site-nav" id="site-nav-panel" data-nav aria-label="Primary">
+        <div class="site-nav-panel">
+          <a href="../../index.html#top">Home</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#skills">Skills</a>
+          <a href="../../index.html#projects">Projects</a>
+          <a href="../../index.html#contact">Contact</a>
+        </div>
+      </nav>
+      <p class="availability"><span class="status-dot" aria-hidden="true"></span> Available for Opportunities</p>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="true" aria-label="Switch to night mode">
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.3" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 1.7v1.5M8 12.8v1.5M1.7 8h1.5M12.8 8h1.5M3.5 3.5l1.1 1.1M11.4 11.4l1.1 1.1M12.5 3.5l-1.1 1.1M4.6 11.4l-1.1 1.1" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M9.2 2.1a4.9 4.9 0 1 0 4.7 6.3A4.2 4.2 0 1 1 9.2 2.1z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        <span class="theme-label-day">Day</span>
+        <span class="theme-label-night">Night</span>
+      </button>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    <article class="case">
+      <header class="case-hero">
+        <div class="wrap">
+          <p class="eyebrow"><a href="../../index.html#projects">Projects</a> <span>// case.study</span></p>
+          <h1>LGU Road &amp; Transportation Monitoring</h1>
+          <p class="lede">An interactive road and transportation monitoring platform that streamlines public reporting, project tracking, infrastructure management, and real-time road mapping.</p>
+          <dl class="hero-meta case-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>Design and development</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Full stack, mapping, AI, and geospatial data</dd>
+            </div>
+            <div>
+              <dt>Surface</dt>
+              <dd>Public site and staff tools</dd>
+            </div>
+          </dl>
+        </div>
+      </header>
+
+      <div class="wrap case-body">
+        <section class="case-stack">
+          <p class="mono-label">Technology stack</p>
+          <div class="stack-board" aria-label="Technology stack">
+            <section class="stack-group">
+              <p class="stack-label">Frontend</p>
+              <ul>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 2.2h10L12.2 13 8 14.4 3.8 13 3 2.2z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="M5.2 5h5.6M6 8h4M6.6 11h2.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>HTML</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.2 2.8 8 6 12.8M10 3.2 13.2 8 10 12.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>CSS</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.2 5.2h7.6v6.2H4.2z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M6.2 8.3h3.6M8 6.6v3.4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>JavaScript</span></li>
+              </ul>
+            </section>
+            <section class="stack-group">
+              <p class="stack-label">Backend</p>
+              <ul>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.2" y="3" width="11.6" height="10" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M5 8h2.2l1.2-2.2L9.6 10 11 8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>PHP</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><ellipse cx="8" cy="4" rx="4.8" ry="1.7" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M3.2 4v7.2c0 1 2.1 1.8 4.8 1.8s4.8-.8 4.8-1.8V4M3.2 7.6c0 1 2.1 1.8 4.8 1.8s4.8-.8 4.8-1.8" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>MySQL</span></li>
+              </ul>
+            </section>
+            <section class="stack-group">
+              <p class="stack-label">Mapping &amp; Geospatial</p>
+              <ul>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.4C8 9 4.6 7.6 3.2 3.6 6.4 4.2 9.2 6 12.8 3.6 11.6 8 8 9.6 8 13.4z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Leaflet</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s4.2-3.8 4.2-6.6a4.2 4.2 0 0 0-8.4 0C3.8 10.2 8 14 8 14z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><circle cx="8" cy="7.2" r="1.3" fill="currentColor"/></svg>TomTom</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.4" y="2.4" width="11.2" height="11.2" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M2.4 6.2h11.2M2.4 9.8h11.2M6.2 2.4v11.2M9.8 2.4v11.2" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>ArcGIS</span></li>
+              </ul>
+            </section>
+            <section class="stack-group">
+              <p class="stack-label">AI Integration</p>
+              <ul>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8 9.2 6.2 13.6 8 9.2 9.8 8 14.2 6.8 9.8 2.4 8 6.8 6.2 8 1.8z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>Google Gemini</span></li>
+              </ul>
+            </section>
+            <section class="stack-group">
+              <p class="stack-label">Tools</p>
+              <ul>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="4.2" cy="3.6" r="1.5" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="4.2" cy="12.4" r="1.5" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="11.8" cy="7" r="1.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M4.2 5.1v5.8M5.6 4.2c1.8.2 4.4.8 4.7 2.8" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Git</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.2 2.4v3.2M8 2.4v3.2M10.8 2.4v3.2M5.2 5.6c0 1.2.8 2 2.8 2s2.8-.8 2.8-2M8 7.6v6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>Fork</span></li>
+                <li><span class="tech-badge"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="2.6" width="10.8" height="2.8" rx="0.6" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="2.6" y="6.6" width="10.8" height="2.6" rx="0.6" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="2.6" y="10.4" width="10.8" height="2.8" rx="0.6" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>XAMPP</span></li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="case-overview">
+          <p class="mono-label">Overview</p>
+          <div class="overview-copy">
+            <p>Designed to bridge public awareness and local government infrastructure management, the LGU Road &amp; Transportation Monitoring System is a centralized web-based platform that brings road condition monitoring, transportation incident reporting, infrastructure project tracking, and flood susceptibility information into one accessible environment. It aims to make local road information easier to understand while providing government personnel with a more organized and efficient approach to infrastructure monitoring and management.</p>
+            <p>At its core is an interactive Live Road Monitoring Map with geolocation integration, allowing residents to identify their current location, explore reported road conditions, view transportation incidents, and locate potentially flood-prone areas. The platform also enables the public to submit incident reports and access relevant road and infrastructure information. Beyond public monitoring, it provides LGU personnel with dedicated tools for managing incoming reports, verifying incidents, assigning projects, coordinating responsible personnel, and tracking implementation progress through structured report management, role-based access, progress updates, scheduling, and document management.</p>
+            <p>Developed using PHP, MySQL, HTML, CSS, and JavaScript, the platform combines interactive mapping, database-driven workflows, and administrative management into a unified system. It further strengthens public transparency by making infrastructure project details accessible, including project budgets, fund allocations, implementation progress, and utilization records. By connecting citizen participation with organized government operations and accessible financial information, the platform promotes more informed communities, efficient infrastructure management, and greater accountability in the use of public resources.</p>
+          </div>
+        </section>
+
+        <section class="case-scope">
+          <p class="mono-label">Core modules</p>
+          <ul class="scope-list">
+            <li>
+              <h2>Interactive Road Map</h2>
+              <p>Visualizes road conditions, reported incidents, traffic situations, and flood susceptibility areas.</p>
+            </li>
+            <li>
+              <h2>Reports Management</h2>
+              <p>Handles road and transportation reports, verification, and monitoring.</p>
+            </li>
+            <li>
+              <h2>Infrastructure Projects</h2>
+              <p>Tracks project assignments, progress, and completion.</p>
+            </li>
+            <li>
+              <h2>Flood &amp; Hazard Monitoring</h2>
+              <p>Integrates geospatial information to identify flood-susceptible areas.</p>
+            </li>
+            <li>
+              <h2>Feedback Management</h2>
+              <p>Provides a channel for public feedback.</p>
+            </li>
+            <li>
+              <h2>Transparency Records</h2>
+              <p>Makes project updates and public records accessible.</p>
+            </li>
+            <li>
+              <h2>Document Management</h2>
+              <p>Organizes supporting files and project documentation.</p>
+            </li>
+            <li>
+              <h2>User Access Management</h2>
+              <p>Controls staff accounts, roles, and permissions.</p>
+            </li>
+            <li>
+              <h2>AI-Integrated Chatbot</h2>
+              <p>Provides AI-powered assistance for inquiries, report submissions, and platform navigation.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="case-foundation">
+          <p class="mono-label">Technical foundation</p>
+          <p>Server-rendered PHP, MySQL, JavaScript, and integrated mapping and geospatial services.</p>
+        </section>
+
+        <aside class="case-panel">
+          <p class="mono-label">Repository</p>
+          <p>The source lives on GitHub, including the SQL used to shape reports, projects, and the transparency tables.</p>
+          <a class="btn btn-primary" href="https://github.com/Iamtintinn/lg-road-monitoring" target="_blank" rel="noopener noreferrer">View repository</a>
+        </aside>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-bar">
+      <a href="../../index.html#projects">Projects</a>
+      <p>Kristine Geranta · Web developer</p>
+      <a href="../../index.html">Portfolio</a>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+</html>
